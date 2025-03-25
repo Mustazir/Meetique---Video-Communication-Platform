@@ -1,4 +1,4 @@
-# zoom_clone
+# Meetique
 
 A new Flutter project.
 

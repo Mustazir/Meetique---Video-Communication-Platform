@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:Meetique/screens/login_screen.dart';
+import 'package:Meetique/utils/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,16 +9,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      debugShowCheckedModeBanner: false,
+      title: 'Meetique',
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: backgroundColor,
       ),
-      home: const Text('hello, worlsd'),
+      routes: {'/login': (context) => const LoginScreen()},
+      home: const LoginScreen(),
     );
   }
 }
