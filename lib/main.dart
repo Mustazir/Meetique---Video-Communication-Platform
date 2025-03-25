@@ -1,3 +1,4 @@
+import 'package:Meetique/screens/home_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:Meetique/screens/login_screen.dart';
 import 'package:Meetique/utils/colors.dart';
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      routes: {'/login': (context) => const LoginScreen()},
+      routes: {'/login': (context) => const LoginScreen(),
+      '/home': (context) => const HomeScreens()
+      },
       home: const LoginScreen(),
     );
   }
