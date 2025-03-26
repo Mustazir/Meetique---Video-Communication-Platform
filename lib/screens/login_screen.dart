@@ -2,7 +2,6 @@ import 'package:Meetique/resources/auth_method.dart';
 import 'package:Meetique/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
-
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -11,7 +10,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final AuthMethods _authMethods =AuthMethods()
+  final AuthMethods _authMethods = AuthMethods();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,20 +20,21 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           const Text(
             'Start or join a meeting',
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 38.0),
             child: Image.asset('assets/images/onboarding.jpg'),
           ),
-          CustomButton(text: 'Google Sign In',
-          onPressed: () async {
+          CustomButton(
+            text: 'Google Sign In',
+            onPressed: () async {
               bool res = await _authMethods.signInWithGoogle(context);
               if (res) {
                 Navigator.pushNamed(context, '/home');
               }
-            },)
-          
+            },
+          ),
         ],
       ),
     );

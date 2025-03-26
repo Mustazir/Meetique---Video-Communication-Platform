@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "705910381884",
-    "project_id": "meetique-dc82a",
-    "storage_bucket": "meetique-dc82a.firebasestorage.app"
+    "project_number": "367048092022",
+    "project_id": "car-rent-practicee",
+    "storage_bucket": "car-rent-practicee.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:705910381884:android:5bf4687ce9906527c91239",
+        "mobilesdk_app_id": "1:367048092022:android:e85c8dbe92585943297257",
         "android_client_info": {
           "package_name": "com.example.Meetique"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "705910381884-1j70i48phktb3n13b3c8kj4ff66uisud.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDSop4Actmi-CPokh5B9ScacO6WaJ1bJvU"
+          "current_key": "AIzaSyCIDIJHDocBzn4jy-jFfbSXyPhYFwJAW2E"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "705910381884-1j70i48phktb3n13b3c8kj4ff66uisud.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

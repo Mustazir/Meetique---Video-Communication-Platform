@@ -9,36 +9,50 @@ class AuthMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<bool> signInWithGoogle(BuildContext context) async {
-    bool res = false;
-    try {
-      final GoogleSignInAccount? googleUser = await GoogleSignIn.signIn();
+  bool res = false;
+  try {
+    // Trigger the Google sign-in flow
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-      final GoogleSignInAuthentication? googleAuth =
-          await googleUser?.authentication;
-
-      final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth?.accessToken,
-        idToken: googleAuth?.idToken,
-      );
-      UserCredential userCredential = await _auth.signInWithCredential(
-        credential,
-      );
-      User? user = userCredential.user;
-
-      if (User != null) {
-        if (userCredential.additionalUserInfo!.isNewUser) {
-          await _firestore.collection('users').doc(user.uid).set({
-            'username': user.displayName,
-            'uid': user.uid,
-            'profilePhoto': user.photoURL,
-          });
-        }
-        res = true;
-      }
-    } on FirebaseAuthException catch (e) {
-      showSnackBar(context, e.message);
-      res = false;
+    if (googleUser == null) {
+      // User canceled the sign-in flow
+      return false;
     }
-    return res;
+
+    // Retrieve the authentication details
+    final GoogleSignInAuthentication? googleAuth = await googleUser.authentication;
+
+    if (googleAuth == null || googleAuth.accessToken == null || googleAuth.idToken == null) {
+      showSnackBar(context, "Failed to retrieve authentication tokens.");
+      return false;
+    }
+
+    // Create a new credential using the tokens
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth.accessToken!,
+      idToken: googleAuth.idToken!,
+    );
+
+    // Sign in with Firebase
+    UserCredential userCredential = await _auth.signInWithCredential(credential);
+    User? user = userCredential.user;
+
+    if (user != null) {
+      if (userCredential.additionalUserInfo?.isNewUser ?? false) {
+        await _firestore.collection('users').doc(user.uid).set({
+          'username': user.displayName,
+          'uid': user.uid,
+          'profilePhoto': user.photoURL,
+        });
+      }
+      res = true;
+    }
+  } on FirebaseAuthException catch (e) {
+    showSnackBar(context, e.message ?? "An error occurred during sign-in.");
+  } catch (e) {
+    showSnackBar(context, "An unexpected error occurred.");
   }
+  return res;
+}
+
 }
