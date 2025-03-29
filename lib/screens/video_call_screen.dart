@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:jitsi_meet/jitsi_meet.dart';
+import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
+import 'package:zoom_clone_tutorial/resources/jitsi_meet_methods.dart';
+import 'package:zoom_clone_tutorial/utils/colors.dart';
+import 'package:zoom_clone_tutorial/widgets/meeting_option.dart';
 
 class VideoCallScreen extends StatefulWidget {
   const VideoCallScreen({Key? key}) : super(key: key);
