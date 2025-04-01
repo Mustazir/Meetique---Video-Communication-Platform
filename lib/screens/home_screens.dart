@@ -1,4 +1,4 @@
-import 'package:Meetique/resources/auth_method.dart';
+import 'package:Meetique/resources/auth_methods.dart';
 import 'package:Meetique/screens/history_meeting_screen.dart';
 import 'package:Meetique/screens/meeting_screen.dart';
 import 'package:Meetique/utils/colors.dart';

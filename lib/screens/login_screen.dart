@@ -1,4 +1,5 @@
-import 'package:Meetique/resources/auth_method.dart';
+
+import 'package:Meetique/resources/auth_methods.dart';
 import 'package:Meetique/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
