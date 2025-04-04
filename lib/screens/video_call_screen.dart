@@ -1,7 +1,7 @@
-import 'package:Meetique/resources/auth_methods.dart';
-import 'package:Meetique/resources/jitsi_meet_methods.dart';
-import 'package:Meetique/utils/colors.dart';
-import 'package:flutter/material.dart';
+// import 'package:Meetique/resources/auth_methods.dart';
+// import 'package:Meetique/resources/jitsi_meet_methods.dart';
+// import 'package:Meetique/utils/colors.dart';
+// import 'package:flutter/material.dart';
 
 
 class VideoCallScreen extends StatefulWidget {
