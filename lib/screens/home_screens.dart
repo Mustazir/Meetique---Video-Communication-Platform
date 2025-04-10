@@ -1,6 +1,5 @@
 import 'package:Meetique/resources/auth_methods.dart';
-import 'package:Meetique/screens/history_meeting_screen.dart';
-import 'package:Meetique/screens/meeting_screen.dart';
+
 import 'package:Meetique/utils/colors.dart';
 import 'package:Meetique/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Widget> pages = [
-    MeetingScreen(),
-    const HistoryMeetingScreen(),
+
+    
     const Text('Contacts'),
     CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
