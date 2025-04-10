@@ -44,40 +44,41 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBzDeId-Pz1uN1ORG7oEQoxS-CvYdkmAws',
-    appId: '1:367048092022:web:eee09fb6f0a7ed66297257',
-    messagingSenderId: '367048092022',
-    projectId: 'car-rent-practicee',
-    authDomain: 'car-rent-practicee.firebaseapp.com',
-    storageBucket: 'car-rent-practicee.firebasestorage.app',
-    measurementId: 'G-0T2JNN08S5',
+    apiKey: 'AIzaSyCTtxd47C9fzbXpgfS_vpDEmvTntGkjWQ8',
+    appId: '1:251765124592:web:ad6ff3c0d126cbff1e0135',
+    messagingSenderId: '251765124592',
+    projectId: 'coupbin-5ca66',
+    authDomain: 'coupbin-5ca66.firebaseapp.com',
+    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
+    storageBucket: 'coupbin-5ca66.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCIDIJHDocBzn4jy-jFfbSXyPhYFwJAW2E',
-    appId: '1:367048092022:android:e85c8dbe92585943297257',
-    messagingSenderId: '367048092022',
-    projectId: 'car-rent-practicee',
-    storageBucket: 'car-rent-practicee.firebasestorage.app',
+    apiKey: 'AIzaSyAqV2d-X6u8t6m2cZlQVs0UPSsgt4mrzuY',
+    appId: '1:251765124592:android:9e3718cda29e09681e0135',
+    messagingSenderId: '251765124592',
+    projectId: 'coupbin-5ca66',
+    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
+    storageBucket: 'coupbin-5ca66.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC6Pw7FGyxWMfDS2isZYq_aBh_jefA2e0E',
-    appId: '1:367048092022:ios:b22a2fc2f9f982c9297257',
-    messagingSenderId: '367048092022',
-    projectId: 'car-rent-practicee',
-    storageBucket: 'car-rent-practicee.firebasestorage.app',
+    apiKey: 'AIzaSyCVZEHXopp-Kxop-uvYWRqVUf3LHxZBurE',
+    appId: '1:251765124592:ios:4639db2ddd0cf20e1e0135',
+    messagingSenderId: '251765124592',
+    projectId: 'coupbin-5ca66',
+    storageBucket: 'coupbin-5ca66.firebasestorage.app',
+    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
     iosBundleId: 'com.example.zoomClone',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBzDeId-Pz1uN1ORG7oEQoxS-CvYdkmAws',
-    appId: '1:367048092022:web:609cfeb275b1ff4d297257',
-    messagingSenderId: '367048092022',
-    projectId: 'car-rent-practicee',
-    authDomain: 'car-rent-practicee.firebaseapp.com',
-    storageBucket: 'car-rent-practicee.firebasestorage.app',
-    measurementId: 'G-K45K2FBCDS',
+    apiKey: 'AIzaSyDLMyCXtakYyxeLwS01pumDyaI481eEPJ0',
+    appId: '1:251765124592:web:d50eb920852ba14c1e0135',
+    messagingSenderId: '251765124592',
+    projectId: 'coupbin-5ca66',
+    authDomain: 'coupbin-5ca66.firebaseapp.com',
+    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
+    storageBucket: 'coupbin-5ca66.firebasestorage.app',
   );
-
 }

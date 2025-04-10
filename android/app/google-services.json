@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "367048092022",
-    "project_id": "car-rent-practicee",
-    "storage_bucket": "car-rent-practicee.firebasestorage.app"
+    "project_number": "251765124592",
+    "project_id": "coupbin-5ca66",
+    "storage_bucket": "coupbin-5ca66.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:367048092022:android:e85c8dbe92585943297257",
+        "mobilesdk_app_id": "1:251765124592:android:9e3718cda29e09681e0135",
         "android_client_info": {
           "package_name": "com.example.Meetique"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCIDIJHDocBzn4jy-jFfbSXyPhYFwJAW2E"
+          "current_key": "AIzaSyAqV2d-X6u8t6m2cZlQVs0UPSsgt4mrzuY"
         }
       ],
       "services": {
