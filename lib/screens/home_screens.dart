@@ -1,7 +1,10 @@
 import 'package:Meetique/resources/auth_methods.dart';
+import 'package:Meetique/screens/history_meeting_screen.dart';
+import 'package:Meetique/screens/meeting_screen.dart';
 
 import 'package:Meetique/utils/colors.dart';
 import 'package:Meetique/widgets/custom_button.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -21,8 +24,14 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Widget> pages = [
+    const MeetingScreen(),
+    const HistoryMeetingScreen(),
+    const Text('contact'),
+    const Text('setting'),
 
-    
+
+
+
     const Text('Contacts'),
     CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
@@ -50,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(
               Icons.comment_bank,
             ),
-            label: 'Meet & Char',
+            label: 'Meet & Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -75,3 +84,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+

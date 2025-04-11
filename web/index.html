@@ -11,7 +11,9 @@
   <!-- ✅ Google Sign-In Web Client ID -->
   <meta name="google-signin-client_id" content="
   251765124592-m72lh6odqbps7e5fncgrlkmid50n1bci.apps.googleusercontent.com" />
-
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+  <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+  
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -21,6 +23,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
+    <!-- Jitsi Meet External API -->
+  <script src="https://meet.jit.si/external_api.js" type="application/javascript"></script>
+
+  
   <title>Meetique</title>
   <link rel="manifest" href="manifest.json">
 </head>
