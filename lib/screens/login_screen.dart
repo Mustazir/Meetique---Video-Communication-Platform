@@ -36,13 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
               }
             },
           ),
-          const SizedBox(height: 20), // Add some space between the buttons
-          CustomButton(
-            text: 'Go to Home',
-            onPressed: () {
-              Navigator.pushNamed(context, '/home');
-            },
-          ),
+          
         ],
       ),
     );
