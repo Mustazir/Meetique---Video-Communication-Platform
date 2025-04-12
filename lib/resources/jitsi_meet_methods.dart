@@ -29,7 +29,9 @@ class JitsiMeetMethods {
 
       await JitsiMeet.joinMeeting(options);
     } catch (error) {
+      
        ("error: $error");
     }
   }
 }
+

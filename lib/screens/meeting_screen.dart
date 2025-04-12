@@ -27,7 +27,7 @@ class MeetingScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             HomeMeetingButton(
-              onPressed: JitsiMeetMethods().createMeeting(isAudioMuted: null, roomName: , isVideoMuted: null),
+              onPressed: createNewMeeting,
               text: 'New Meeting',
               icon: Icons.videocam,
             ),
