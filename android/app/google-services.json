@@ -1,26 +1,79 @@
 {
   "project_info": {
-    "project_number": "251765124592",
-    "project_id": "coupbin-5ca66",
-    "storage_bucket": "coupbin-5ca66.firebasestorage.app"
+    "project_number": "338142616870",
+    "project_id": "to-do-a185e",
+    "storage_bucket": "to-do-a185e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:251765124592:android:9e3718cda29e09681e0135",
+        "mobilesdk_app_id": "1:338142616870:android:5c113c946b5705e79075e7",
         "android_client_info": {
           "package_name": "com.example.Meetique"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "338142616870-424t56kj2cprm68almppibhbj8o5cgqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyAqV2d-X6u8t6m2cZlQVs0UPSsgt4mrzuY"
+          "current_key": "AIzaSyCYoNfjWoP13Z7HfdS6VZUNsTSeWkhWe1o"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338142616870-424t56kj2cprm68almppibhbj8o5cgqp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338142616870-vc5mt7gdu7rdi375260crprhfjh6jptp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zoom"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338142616870:android:c1a94fcd4f6c96de9075e7",
+        "android_client_info": {
+          "package_name": "com.example.zoom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338142616870-424t56kj2cprm68almppibhbj8o5cgqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYoNfjWoP13Z7HfdS6VZUNsTSeWkhWe1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338142616870-424t56kj2cprm68almppibhbj8o5cgqp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338142616870-vc5mt7gdu7rdi375260crprhfjh6jptp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zoom"
+              }
+            }
+          ]
         }
       }
     }

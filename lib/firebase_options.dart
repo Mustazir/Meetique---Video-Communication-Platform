@@ -44,41 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCTtxd47C9fzbXpgfS_vpDEmvTntGkjWQ8',
-    appId: '1:251765124592:web:ad6ff3c0d126cbff1e0135',
-    messagingSenderId: '251765124592',
-    projectId: 'coupbin-5ca66',
-    authDomain: 'coupbin-5ca66.firebaseapp.com',
-    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
-    storageBucket: 'coupbin-5ca66.firebasestorage.app',
+    apiKey: 'AIzaSyDeA6tSmnuVxUDH9GvRrfMY3yMKGhvEXsw',
+    appId: '1:338142616870:web:32f48df7b95ff5d39075e7',
+    messagingSenderId: '338142616870',
+    projectId: 'to-do-a185e',
+    authDomain: 'to-do-a185e.firebaseapp.com',
+    storageBucket: 'to-do-a185e.firebasestorage.app',
+    measurementId: 'G-DR8S3CDYVW',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAqV2d-X6u8t6m2cZlQVs0UPSsgt4mrzuY',
-    appId: '1:251765124592:android:9e3718cda29e09681e0135',
-    messagingSenderId: '251765124592',
-    projectId: 'coupbin-5ca66',
-    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
-    storageBucket: 'coupbin-5ca66.firebasestorage.app',
+    apiKey: 'AIzaSyCYoNfjWoP13Z7HfdS6VZUNsTSeWkhWe1o',
+    appId: '1:338142616870:android:5c113c946b5705e79075e7',
+    messagingSenderId: '338142616870',
+    projectId: 'to-do-a185e',
+    storageBucket: 'to-do-a185e.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCVZEHXopp-Kxop-uvYWRqVUf3LHxZBurE',
-    appId: '1:251765124592:ios:4639db2ddd0cf20e1e0135',
-    messagingSenderId: '251765124592',
-    projectId: 'coupbin-5ca66',
-    storageBucket: 'coupbin-5ca66.firebasestorage.app',
-    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
+    apiKey: 'AIzaSyAyByLJ-EurLcciHGi0UBdk5yz_C_RaV70',
+    appId: '1:338142616870:ios:2f3be2c4cadd3dc29075e7',
+    messagingSenderId: '338142616870',
+    projectId: 'to-do-a185e',
+    storageBucket: 'to-do-a185e.firebasestorage.app',
+    iosClientId: '338142616870-6329e7noqqh456p8vbql27ek2spl3jed.apps.googleusercontent.com',
     iosBundleId: 'com.example.zoomClone',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDLMyCXtakYyxeLwS01pumDyaI481eEPJ0',
-    appId: '1:251765124592:web:d50eb920852ba14c1e0135',
-    messagingSenderId: '251765124592',
-    projectId: 'coupbin-5ca66',
-    authDomain: 'coupbin-5ca66.firebaseapp.com',
-    databaseURL: 'https://coupbin-5ca66-default-rtdb.firebaseio.com',
-    storageBucket: 'coupbin-5ca66.firebasestorage.app',
+    apiKey: 'AIzaSyDeA6tSmnuVxUDH9GvRrfMY3yMKGhvEXsw',
+    appId: '1:338142616870:web:daa3239075c3e8db9075e7',
+    messagingSenderId: '338142616870',
+    projectId: 'to-do-a185e',
+    authDomain: 'to-do-a185e.firebaseapp.com',
+    storageBucket: 'to-do-a185e.firebasestorage.app',
+    measurementId: 'G-XMGSB3SWP0',
   );
 }
