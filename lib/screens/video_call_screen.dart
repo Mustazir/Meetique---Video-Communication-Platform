@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
 
 class VideoCallScreen extends StatefulWidget {
-  const VideoCallScreen({Key? key}) : super(key: key);
+  const VideoCallScreen({super.key});
 
   @override
   State<VideoCallScreen> createState() => _VideoCallScreenState();
