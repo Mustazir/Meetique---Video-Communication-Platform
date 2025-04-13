@@ -7,15 +7,15 @@ class HistoryMeetingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
-      stream: FirestoreMethods().MeetingHistory,
+      stream: FirestoreMethods().meetingsHistory,
       builder: (context, snapshot){
-        if (snapshot.connectionState == connectionState.waiting){
+        if (snapshot.connectionState == ConnectionState.waiting){
           return const Center(
             child: CircularProgressIndicator(),
 
           );
         }  
-        return Listview.builder(
+        return ListView.builder(
           itemCount: (snapshot.dart! as dynamic).docs.length,
           itemBuilder: (context, index) => ListTile(
             title: Text(
